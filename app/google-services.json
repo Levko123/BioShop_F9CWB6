@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492712324100",
+    "project_id": "bioshop-dcd86",
+    "storage_bucket": "bioshop-dcd86.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492712324100:android:f95a5b5d8360b340805951",
+        "android_client_info": {
+          "package_name": "com.bioshop.bioshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGSo_EVE762MvgMpmtOd4ZKEAV7039rdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
