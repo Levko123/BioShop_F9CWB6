@@ -1,13 +1,14 @@
-package com.bioshop.bioshop
+package com.example.bioshop.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.ViewPropertyAnimator
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.bioshop.R
+import com.example.bioshop.ui.main.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
@@ -47,7 +48,8 @@ class LoginActivity : AppCompatActivity() {
                         // Sikeres bejelentkezés
                         Toast.makeText(this, "Sikeres belépés!", Toast.LENGTH_SHORT).show()
                         // Itt indíthatsz tovább egy főképernyőre vezető activity-t, pl. ProductListActivity
-                        // startActivity(Intent(this, ProductListActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish() // ne tudjon visszalépni a Login képernyőre
                     } else {
                         // Ellenőrizzük az exception üzenetét (például, ha a felhasználó nem létezik)
                         Toast.makeText(this, "Felhasználó nem létezik!", Toast.LENGTH_SHORT).show()

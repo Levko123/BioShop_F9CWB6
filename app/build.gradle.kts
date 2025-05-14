@@ -3,10 +3,11 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("com.google.gms.google-services")
+
 }
 
 android {
-    namespace = "com.bioshop.bioshop"
+    namespace = "com.example.bioshop"
     compileSdk = 35
 
     defaultConfig {
@@ -37,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding=true
     }
 }
 
@@ -64,4 +66,18 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.android.material:material:1.9.0")
     implementation("com.google.firebase:firebase-auth:22.1.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("io.coil-kt:coil:2.4.0")
+    implementation (platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation ("com.google.firebase:firebase-firestore-ktx")
+    implementation ("com.google.firebase:firebase-auth-ktx")
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+    implementation ("com.google.firebase:firebase-storage-ktx")
+
+
 }

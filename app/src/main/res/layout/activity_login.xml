@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context="com.example.bioshop.ui.auth.LoginActivity">
 
     <!-- Alkalmazás neve: BioShop -->
     <TextView
@@ -22,6 +22,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"
         android:alpha="0" />  <!-- induláskor átlátszó, majd animáció -->
+
+    <!-- activity_login.xml részlet -->
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
 
     <!-- Felirat: Bejelentkezés -->
     <TextView
@@ -83,5 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

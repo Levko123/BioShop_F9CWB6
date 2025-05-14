@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,19 +15,34 @@
 
         <!-- Launcher Activity -->
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.BioShop">
+            android:name="com.example.bioshop.ui.auth.LoginActivity"
+            android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <!-- 2. Register -->
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.example.bioshop.ui.auth.RegisterActivity"
+            android:exported="false" />
+
+        <!-- 3. Main – bejelentkezés után -->
+        <activity
+            android:name="com.example.bioshop.ui.main.MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.BioShop"/>
+            android:theme="@style/Theme.BioShop" />
+
+
+
+        <!-- 4. Termék-részletek -->
+        <activity
+            android:name="com.example.bioshop.ui.detail.ProductDetailActivity"
+            android:exported="false" />
+
+
 
     </application>
 
